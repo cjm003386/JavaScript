@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+
+<h1>이미지 클릭 시 변경</h1>
+<img src = "image/koala.jpg" id = "img" width=500px height=500px>;
+<script>
+	
+		var flower = document.getElementById('img');
+		var path = "image/Hydrangeas.jpg";
+		
+		flower.addEventListener('click', function(){
+			
+			this.src=path;
+			
+		});
+		
+
+</script>
+
+</body>
+</html>

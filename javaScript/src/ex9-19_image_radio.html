@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div> radio 버튼을 클릭하면 이미가 바뀝니다.</div>
+	<hr>
+	<form>
+	<label><input type="radio" name="icon" value='image/Desert.jpg'>image1</label>,<br>
+	<label><input type="radio" name="icon" value='image/koala.jpg' checked>image2</label>
+	<label><input type="radio" name="icon" value='image/penguins.jpg'>image3</label><br>
+	<img src='image/koala.jpg' id="iconImg">
+	</form>
+
+<script>
+	
+	var icon = document.getElementsByName('icon');
+	for(var i = 0; i< icon.length; i ++){
+		icon[i].addEventListener('click', show);
+	}
+	
+	function show(e){
+		console.log(e === window.event)
+		var img = document.getElementById('iconImg');
+		img.src = e.currentTarget.value;
+	}
+	
+	
+	
+</script>
+</body>
+</html>
