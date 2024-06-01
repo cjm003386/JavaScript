@@ -1,1 +1,1 @@
-JavaScript 공부파일
+JavaScript
